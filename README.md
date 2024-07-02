@@ -1,7 +1,7 @@
 # 目标扫描
 
 ## 一、主机发现
-```**$ sudo nmap -sn 10.129.96.0/24 -oA nmapscan/hosts**```
+```$ sudo nmap -sn 10.129.96.0/24 -oA nmapscan/hosts```
 
 ```
 $ sudo nmap -sn 10.129.96.0/24 -oA nmapscan/hosts
@@ -17,7 +17,7 @@ Nmap done: 256 IP addresses (3 hosts up) scanned in 35.50 seconds
 ```
 
 ## 二、扫描TCP端口
-```**$ sudo nmap --min-rate 10000 -p- 10.129.96.149 -oA nmapscan/tcp**```
+```$ sudo nmap --min-rate 10000 -p- 10.129.96.149 -oA nmapscan/tcp```
 
 ```
 $ sudo nmap --min-rate 10000 -p- 10.129.96.149 -oA nmapscan/tcp
@@ -39,7 +39,7 @@ Nmap done: 1 IP address (1 host up) scanned in 28.04 seconds
 ```
 
 ## 三、扫描UDP端口
-```**$ sudo nmap -sU --min-rate 10000 -p- 10.129.96.149 -oA nmapscan/udp**```
+```$ sudo nmap -sU --min-rate 10000 -p- 10.129.96.149 -oA nmapscan/udp```
 
 ```
 $ sudo nmap -sU --min-rate 10000 -p- 10.129.96.149 -oA nmapscan/udp
@@ -57,7 +57,7 @@ $ sudo nmap -sU --min-rate 10000 --top-ports 20 10.129.96.149 -oA nmapscan/udp
 ```
 
 ## 四、扫描系统服务(包含全部TCP和UDP端口)
-```**$ sudo nmap -sT -sV -sC -O -p22,6789,8080,8443,8843,8880 10.129.96.149 -oA nmapscan/detail**```
+```$ sudo nmap -sT -sV -sC -O -p22,6789,8080,8443,8843,8880 10.129.96.149 -oA nmapscan/detail```
 
 ```                                                        
 $ sudo nmap -sT -sV -sC -O -p22,6789,8080,8443,8843,8880 10.129.96.149 -oA nmapscan/detail
@@ -133,7 +133,7 @@ Nmap done: 1 IP address (1 host up) scanned in 171.96 seconds
 ```
 
 ## 五、漏洞扫描
-```**$ sudo nmap --script=vuln -p22,6789,8080,8443,8843,8880 10.129.96.149 -oA nmapscan/vulns**```
+```$ sudo nmap --script=vuln -p22,6789,8080,8443,8843,8880 10.129.96.149 -oA nmapscan/vulns```
 
 ```
 $ sudo nmap --script=vuln -p22,6789,8080,8443,8843,8880 10.129.96.149 -oA nmapscan/vulns # vuln可以改成其它参数
