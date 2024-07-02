@@ -1,7 +1,7 @@
 
 # 信息收集
 
-# [目标扫描](https://flycrane.github.io/scan.md)
+# [目标扫描](https://flycrane.github.io/scan)
 
 # 攻击面渗透
 
